@@ -1,0 +1,47 @@
+<!--
+  Generated template for the QuestionFourPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Question Four</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<p>Who is Nick Valentine?</p>
+<ion-img width="200" height="150" src="https://cdnb.artstation.com/p/assets/images/images/005/395/911/large/artem-artificial-nick-all-wip3.jpg?1490725240"></ion-img>
+
+<!--List of radio buttons that the user can choose from  -->
+<ion-list radio-group [(ngModel)] ="questionFour">
+    <ion-item>
+      <ion-label>A Radier</ion-label>
+      <ion-radio value="A Radier"></ion-radio>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label>A Synth Private Dectective</ion-label>
+      <ion-radio value="A Synth Private Dectective"></ion-radio>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label>Mayor of NukeTown</ion-label>
+      <ion-radio value="Mayor of NukeTown"></ion-radio>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label>Founder of the Institute</ion-label>
+      <ion-radio value="Founder of the Institute"></ion-radio>
+    </ion-item>
+    
+</ion-list>
+
+<!-- Button that saves the answer and moves on to the next question -->
+<button ion-button (click)="nextQ4()">Next</button>
+
+</ion-content>

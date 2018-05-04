@@ -1,0 +1,50 @@
+<!--
+  Generated template for the QuestionOnePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Question One</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<p>What is the name of the first misson in Fallout 3</p>
+<ion-img width="200" height="150" src="https://images.g2a.com/newlayout/470x470/1x1x0/07948dc08df1/5910e11f5bafe36d95253fbe"></ion-img>
+
+<!--List of radio buttons that the user can choose from  -->
+<ion-list radio-group [(ngModel)] ="questionOne">
+
+<ion-item>
+  <ion-label>Et Tumor Brute?</ion-label>
+  <ion-radio value="Et Tumor Brute?"></ion-radio>
+</ion-item>
+
+<ion-item>
+  <ion-label>Mass Fusion</ion-label>
+  <ion-radio value="Mass Fusion"></ion-radio>
+</ion-item>
+
+<ion-item>
+  <ion-label>Baby Steps</ion-label>
+  <ion-radio value="Baby Steps"></ion-radio>
+</ion-item>
+
+<ion-item>
+  <ion-label>Long Time Coming</ion-label>
+  <ion-radio value="Long Time Coming"></ion-radio>
+</ion-item>
+
+</ion-list>
+
+<!-- Button that saves the answer and moves on to the next question -->
+<button ion-button (click)="nextQ()">Next</button>
+
+<!--<button ion-button (click)="saveQ()">Save Question</button>-->
+
+</ion-content>
